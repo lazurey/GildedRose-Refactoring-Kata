@@ -7,11 +7,11 @@ function Item(name, sell_in, quality) {
 var items = []
 
 function update_quality() {
-  var QUALITY_FULL = 50;
-  var AGED_BRIE = 'Aged Brie',
-      BACKSTAGE = 'Backstage passes to a TAFKAL80ETC concert',
-      SULFURAS = 'Sulfuras, Hand of Ragnaros';
-  var whiteListArr = [AGED_BRIE, BACKSTAGE, SULFURAS];
+  const QUALITY_FULL = 50;
+  const AGED_BRIE = 'Aged Brie',
+        BACKSTAGE = 'Backstage passes to a TAFKAL80ETC concert',
+        SULFURAS = 'Sulfuras, Hand of Ragnaros';
+  const whiteListArr = [AGED_BRIE, BACKSTAGE, SULFURAS];
 
   function _increase(q) { return (q < QUALITY_FULL) ? 1 : 0; }
   function _decrease(q) { return (q > 0) ? -1 : 0; }
